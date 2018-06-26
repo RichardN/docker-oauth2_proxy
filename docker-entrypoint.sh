@@ -25,6 +25,7 @@ if [ "$1" = 'oauth2_proxy' ]; then
             authenticated-emails-file
             azure-tenant
             basic-auth-password
+            bitbucket-team
             client-id
             client-secret
             config
