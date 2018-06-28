@@ -95,7 +95,7 @@ if [ "$1" = 'oauth2_proxy' ]; then
                     #
                     # one variable uses a dash rather than underscore...
                     if [ "$var" == "proxy_prefix" ]; then
-                      echo "proxy-prefix = \"$!{env_var}\"" >> /conf/oauth2_proxy.cfg
+                      echo "proxy-prefix = \"${!env_var}\"" >> /conf/oauth2_proxy.cfg
                     else
                       echo "${var} = \"${!env_var}\"" >> /conf/oauth2_proxy.cfg
                     fi
